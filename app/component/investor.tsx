@@ -12,15 +12,20 @@ export default function Investor() {
             alt=""
           />
         </div>
-        <div className="flex-1 flex items-center text-lg">
-          <div className="m-5 text-blue-50 indent-5">
-            <p className="text-center indent-0">
+        <div className="flex-1 flex items-center">
+          <div className="m-5 text-blue-50">
+            <h1 className="text-2xl text-center">
+              Dự án được đầu tư bởi: TDG Group
+            </h1>
+            <br />
+            <br />
+            <p className="text-center">
               <span className="text-amber-300 font-bold ">TDG Group</span> là
               một công ty đầu tư, quản lý và phát triển bất động sản hàng đầu
               tại tỉnh Bà Rịa - Vũng Tàu, thủ phủ du lịch của miền Nam.
             </p>
             <br />
-            <p>
+            <p className="indent-5">
               Được thành lập vào năm 2004, trải qua gần 20 năm liên tục phát
               triển, TDG Group chủ trương đầu tư phát triển các dự án bất động
               sản cao cấp dài hạn với danh mục đầu tư ngày càng tăng. Các công

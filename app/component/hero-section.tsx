@@ -86,7 +86,7 @@ export function CardSection() {
 
             {/* Content */}
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-sky-700">
+              <h3 className="text-xl font-semibold text-cyan-700">
                 {card.title}
               </h3>
               <p className="text-gray-600 text-sm">{card.description}</p>
