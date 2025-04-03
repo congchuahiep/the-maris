@@ -2,25 +2,20 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div>
+    <div className="h-[100vh]">
       {/* BIG PICTURE SECTION */}
       <div className="h-[60vh] relative text-center">
         <div>
-          <div
-            className="absolute top-[24vh] left-1/2 -translate-1/2 z-1 text-green-50"
-          >
+          <div className="absolute top-[24vh] left-1/2 -translate-1/2 z-1 text-green-50">
             <h1 className="text-5xl">The Maris Vũng Tàu</h1>
             <p className="">Trải nghiệm đẳng cấp</p>
           </div>
 
           <Image
             src="/demo2.jpg"
-            height={0}
-            width={0}
-            layout="fill"
-            objectFit="cover"
-            className="brightness-50 -z-1"
-            alt=""
+            fill
+            className="brightness-50 -z-1 object-cover"
+            alt="The Maris Vũng Tàu"
           />
         </div>
       </div>
@@ -30,11 +25,10 @@ export default function Hero() {
         <CardSection />
       </div>
     </div>
-  )
+  );
 }
 
-function CardSection() {
-
+export function CardSection() {
   const cards = [
     {
       id: 1,
@@ -71,7 +65,7 @@ function CardSection() {
           <div
             key={card.id}
             className={`
-              relative bg-white shadow-lg rounded-xs overflow-hidden 
+              relative bg-white shadow-lg rounded-sm overflow-hidden
               ${card.id % 2 === 1 && "top-10"}
               ${card.class}
             `}
@@ -81,9 +75,8 @@ function CardSection() {
               <Image
                 src={card.img}
                 alt={card.title}
-                layout="fill"
-                objectFit="cover"
-                className="object-left-bottom"
+                fill
+                className="object-left-bottom object-cover"
               />
               {/* Badge */}
               <span className="absolute top-2 left-2 bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded-md shadow">
@@ -93,7 +86,7 @@ function CardSection() {
 
             {/* Content */}
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-cyan-700">
+              <h3 className="text-xl font-semibold text-sky-700">
                 {card.title}
               </h3>
               <p className="text-gray-600 text-sm">{card.description}</p>
