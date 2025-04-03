@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Libre_Franklin } from "next/font/google";
 import "./globals.css";
 
-// export const libreFranklin = Libre_Franklin({});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export const libreFranklin = Libre_Franklin({});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -27,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-50`}
+        className={`${libreFranklin.className} ${geistMono.variable} antialiased bg-slate-50`}
       >
         {children}
       </body>
