@@ -1,6 +1,6 @@
-import Hero from "./component/hero-section";
-import Position from "./component/position";
-// import Investor from "./component/investor";
+import Hero from "./sections/hero-section";
+import Position from "./sections/position";
+// import Investor from "./sections/investor";
 
 export default function Home() {
   return (
