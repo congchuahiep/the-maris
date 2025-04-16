@@ -65,15 +65,15 @@ export function Timeline() {
           </span>
           {/* Timeline dot and line */}
           <div className="flex flex-col items-center flex-1 relative">
-            <div className="absolute top-1 w-3 h-3 bg-cyan-100 rounded-full"></div>
+            <div className="absolute top-1 w-3 h-3 bg-cyan-100 rounded-full" />
             {index !== timelineData.length - 1 && (
-              <div className="absolute top-3 w-px h-27 bg-orange-200 -z-1"></div>
+              <div className="absolute top-3 w-px h-27 bg-orange-200 -z-1" />
             )}
           </div>
           {/* Label */}
           <span className="indent-0 ml-2 flex-5 text-left text-sm text-white">
-            {item.label.map((label, i) => (
-              <span key={i} className="block pb-1">
+            {item.label.map((label) => (
+              <span key={label} className="block pb-1">
                 • {label}
               </span>
             ))}

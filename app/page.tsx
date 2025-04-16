@@ -1,3 +1,4 @@
+import Flat from "./sections/flat";
 import Hero from "./sections/hero-section";
 import Position from "./sections/position";
 import Utilities from "./sections/utilites";
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero />
       <Position />
       <Utilities />
-      {/* <Investor /> */}
+      <Flat />
 
       <Image
         src="/TDGLogo.png"
